@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <title>Ryan's Fish Heaven</title>
+  </head>
+  <body>
+    <nav class="sticky top-0 z-50 border-gray-200 bg-gray-900 shadow-md">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-2xl font-bold whitespace-nowrap text-white"> <span class="text-blue-700 text-2xl">Ryan's </span>Fish Heaven </span>
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
+            <li>
+              <a
+                href="#home"
+                class="nav-link block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="nav-link block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="nav-link block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href="profile.html"
+                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                >Profile</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Products -->
+    <section id="products" class="py-16 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <div class="mb-8 text-center">
+          <h2 class="text-4xl font-extrabold text-white">Other Products</h2>
+          <p class="text-white mt-2">Explore our wide range of products to elevate your aquatic experience.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan2.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan2.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan2.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan2.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 1 -->
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <img class="rounded-t-lg" src="img/ikan1.jpeg" alt="Fish" />
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Fish</h5>
+              <p class="mb-3 font-normal text-gray-700">Choose from a variety of vibrant and healthy fish for your aquarium.</p>
+              <button data-modal-target="productModal1" data-modal-toggle="productModal1" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                View Details
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-8">
+          <a href="index.html" class="flex items-center bg-blue-700 rounded-lg hover:bg-blue-800 text-white font-bold py-2 px-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+          </a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="productModal1" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md max-h-full mx-auto">
+          <div class="relative bg-white rounded-lg shadow">
+            <div class="flex items-start justify-between p-4 border-b rounded-t">
+              <h3 class="text-lg font-semibold text-gray-900">Fish Details</h3>
+              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="productModal1">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 011.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="p-6 space-y-4">
+              <img src="img/ikan1.jpeg" alt="Fish" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h4 class="text-xl font-bold text-gray-900">Vibrant Tropical Fish</h4>
+                <p class="text-gray-700 mt-2">These vibrant tropical fish are perfect for aquariums. They are healthy, well-fed, and ready to enhance your aquatic experience.</p>
+                <ul class="mt-3 list-disc list-inside text-gray-600 text-sm">
+                  <li>Species: Betta Splendens</li>
+                  <li>Size: 3-5 cm</li>
+                  <li>Care Level: Easy</li>
+                  <li>Diet: Pellet & Flake Food</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex items-center p-4 space-x-2 border-t border-gray-200 rounded-b">
+              <button data-modal-hide="productModal1" type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="shadow bg-gray-900">
+      <div class="w-full max-w-screen-xl mx-auto px-4 py-6 md:py-8">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+            <span class="self-center text-2xl font-bold whitespace-nowrap text-white"> <span class="text-blue-700">Ryan's </span>Fish Heaven </span>
+          </a>
+          <ul class="flex flex-col sm:flex-row sm:items-center text-sm font-medium text-gray-400">
+            <li class="mb-2 sm:mb-0 sm:mr-6">
+              <a href="index.html" class="foot-link hover:underline">Home</a>
+            </li>
+            <li class="mb-2 sm:mb-0 sm:mr-6">
+              <a href="index.html#products" class="foot-link hover:underline">Product</a>
+            </li>
+            <li class="mb-2 sm:mb-0 sm:mr-6">
+              <a href="index.html#about" class="foot-link hover:underline">About</a>
+            </li>
+            <li>
+              <a href="profile.html" class="foot-link hover:underline">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 dark:border-gray-700" />
+        <span class="block text-sm text-center text-gray-400"> © 2024 <a href="https://flowbite.com/" class="hover:underline">Ryan's Fish Heaven™</a>. All Rights Reserved. </span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
